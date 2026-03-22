@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Zhou Research Group — LSU</title>
+  <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXYRSL3LQK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WXYRSL3LQK');
+  </script>
+</head>
+<body data-page="Gallery">
+
+  <div class="page-hero">
+    <img src="images/gallery.jpg" alt="Lab gallery" class="hero-banner">
+    <div class="hero-overlay">
+      <h1>Gallery</h1>
+      <p class="hero-sub">Photos from lab activities, field days, and events</p>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="gallery-grid">
+
+      <div class="gallery-item fade-in">
+        <div class="gallery-img-wrap">
+          <img src="images/sugarcane.jpg" alt="Sugarcane Field Day">
+        </div>
+        <div class="gallery-caption">
+          <h4>Sugarcane Field Day</h4>
+          <span class="gallery-date">July 16, 2026</span>
+        </div>
+      </div>
+
+      <div class="gallery-item fade-in">
+        <div class="gallery-img-wrap">
+          <img src="images/water.jpg" alt="Water Management Field Day">
+        </div>
+        <div class="gallery-caption">
+          <h4>Water Management Field Day</h4>
+          <span class="gallery-date">July 9, 2025</span>
+        </div>
+      </div>
+
+      <!-- 
+        ✏️ TO ADD MORE PHOTOS:
+        Copy-paste the block below and update src, alt, title, and date.
+
+        <div class="gallery-item fade-in">
+          <div class="gallery-img-wrap">
+            <img src="images/YOUR-IMAGE.jpg" alt="Event Name">
+          </div>
+          <div class="gallery-caption">
+            <h4>Event Name</h4>
+            <span class="gallery-date">Month Day, Year</span>
+          </div>
+        </div>
+      -->
+
+    </div>
+  </div>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="site.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxClose = document.getElementById('lightboxClose');
+
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const img = item.querySelector('img');
+          const caption = item.querySelector('h4');
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightboxCaption.textContent = caption ? caption.textContent : '';
+          lightbox.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+
+      function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+</body>
+</html>
