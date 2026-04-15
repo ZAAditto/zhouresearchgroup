@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teaching | Zhou Research Group — LSU</title>
+  <title>Gallery | Zhou Research Group — LSU</title>
   <link rel="stylesheet" href="style.css">
-    <!-- Google Analytics -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXYRSL3LQK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -14,100 +14,158 @@
     gtag('config', 'G-WXYRSL3LQK');
   </script>
 </head>
-<body data-page="Teaching">
-
+<body data-page="Gallery">
   <div class="page-hero">
-    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1400&h=400&fit=crop&crop=center" alt="Teaching and mentoring" class="hero-banner">
+    <img src="images/gallery.jpg" alt="Lab gallery" class="hero-banner">
     <div class="hero-overlay">
-      <h1>Teaching</h1>
-      <p class="hero-sub">Teaching and mentoring experience</p>
+      <h1>Gallery</h1>
+      <p class="hero-sub">Photos from lab activities, field days, and events</p>
     </div>
   </div>
 
   <div class="content-section">
 
-    <!-- ═══════ INSTRUCTOR ═══════ -->
-    <div class="section-divider"></div>
-    <h2 class="section-heading" style="margin-bottom:2.5rem;">Instructor</h2>
-
-    <div class="teaching-table fade-in">
-      <div class="teach-row">
-        <div class="teach-semester">Spring 2022</div>
-        <div class="teach-course">AOM 4434 Precision Agriculture</div>
-        <div class="teach-inst">University of Florida</div>
+    <!-- ═══════ EVENT 1 ═══════ -->
+    <div class="gallery-event fade-in">
+      <div class="gallery-event-header">
+        <h3>Sugarcane Field Day</h3>
+        <span class="gallery-date">July 16, 2026</span>
+      </div>
+      <div class="gallery-carousel">
+        <button class="carousel-btn carousel-prev" aria-label="Previous">&#8249;</button>
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="images/sugarcane.jpg" alt="Sugarcane Field Day">
+          </div>
+          <div class="carousel-slide">
+            <div class="img-placeholder"><span class="placeholder-icon">📷</span><span class="placeholder-label">Add photo</span></div>
+          </div>
+          <div class="carousel-slide">
+            <div class="img-placeholder"><span class="placeholder-icon">📷</span><span class="placeholder-label">Add photo</span></div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots"></div>
       </div>
     </div>
 
-    <!-- ═══════ TEACHING ASSISTANT ═══════ -->
-    <div class="section-divider" style="margin-top:4rem;"></div>
-    <h2 class="section-heading" style="margin-bottom:2.5rem;">Teaching Assistant</h2>
-
-    <div class="teaching-table fade-in">
-      <div class="teach-row">
-        <div class="teach-semester">Spring 2021</div>
-        <div class="teach-course">AOM 4434 Precision Agriculture</div>
-        <div class="teach-inst">University of Florida</div>
+    <!-- ═══════ EVENT 2 ═══════ -->
+    <div class="gallery-event fade-in">
+      <div class="gallery-event-header">
+        <h3>Water Management Field Day</h3>
+        <span class="gallery-date">July 9, 2025</span>
       </div>
-      <div class="teach-row">
-        <div class="teach-semester">Spring 2019</div>
-        <div class="teach-course">GIST 4302/5302 Spatial Analysis and Modeling</div>
-        <div class="teach-inst">Texas Tech University</div>
-      </div>
-      <div class="teach-row">
-        <div class="teach-semester">Fall 2018</div>
-        <div class="teach-course">GIST 4302/5302 Spatial Analysis and Modeling</div>
-        <div class="teach-inst">Texas Tech University</div>
-      </div>
-      <div class="teach-row">
-        <div class="teach-semester">Spring 2018</div>
-        <div class="teach-course">GIST 3301/5301 Remote Sensing of Environment</div>
-        <div class="teach-inst">Texas Tech University</div>
-      </div>
-      <div class="teach-row">
-        <div class="teach-semester">Fall 2017</div>
-        <div class="teach-course">GIST 3300 Introduction to GIS &amp; GIST 3301/5301 Remote Sensing of Environment</div>
-        <div class="teach-inst">Texas Tech University</div>
-      </div>
-      <div class="teach-row">
-        <div class="teach-semester">Spring 2017</div>
-        <div class="teach-course">GIST 4302/5302 Spatial Analysis and Modeling</div>
-        <div class="teach-inst">Texas Tech University</div>
+      <div class="gallery-carousel">
+        <button class="carousel-btn carousel-prev" aria-label="Previous">&#8249;</button>
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="images/water.jpg" alt="Water Management Field Day">
+          </div>
+          <div class="carousel-slide">
+            <div class="img-placeholder"><span class="placeholder-icon">📷</span><span class="placeholder-label">Add photo</span></div>
+          </div>
+          <div class="carousel-slide">
+            <div class="img-placeholder"><span class="placeholder-icon">📷</span><span class="placeholder-label">Add photo</span></div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots"></div>
       </div>
     </div>
 
-    <!-- ═══════ GUEST LECTURE ═══════ -->
-    <div class="section-divider" style="margin-top:4rem;"></div>
-    <h2 class="section-heading" style="margin-bottom:2.5rem;">Guest Lecture</h2>
+    <!--
+      ✏️ TO ADD A NEW EVENT:
+      Copy the block below, update the title, date, and image sources.
+      Add as many <div class="carousel-slide"> items as you have photos.
 
-    <div class="teaching-table fade-in">
-      <div class="teach-row">
-        <div class="teach-semester">10/06/2025</div>
-        <div class="teach-course">"Artificial Intelligence in Agriculture"</div>
-        <div class="teach-inst">University of Arkansas Pine Bluff</div>
+      <div class="gallery-event fade-in">
+        <div class="gallery-event-header">
+          <h3>Event Name</h3>
+          <span class="gallery-date">Month Day, Year</span>
+        </div>
+        <div class="gallery-carousel">
+          <button class="carousel-btn carousel-prev" aria-label="Previous">&#8249;</button>
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="images/photo1.jpg" alt="Description"></div>
+            <div class="carousel-slide"><img src="images/photo2.jpg" alt="Description"></div>
+            <div class="carousel-slide"><img src="images/photo3.jpg" alt="Description"></div>
+          </div>
+          <button class="carousel-btn carousel-next" aria-label="Next">&#8250;</button>
+          <div class="carousel-dots"></div>
+        </div>
       </div>
-    </div>
-
-    <!-- ═══════ MENTORING ═══════ -->
-    <div class="section-divider" style="margin-top:4rem;"></div>
-    <h2 class="section-heading" style="margin-bottom:2.5rem;">Mentoring</h2>
-
-    <div class="mentoring-grid fade-in">
-      <div class="mentor-card">
-        <div class="mentor-icon">🎓</div>
-        <h3>UF ABE Mentoring Program</h3>
-        <div class="mentor-period">2019 – 2022</div>
-        <p>Mentored three 1st year graduate students to adapt to their studies and life at UF.</p>
-      </div>
-      <div class="mentor-card">
-        <div class="mentor-icon">🤖</div>
-        <h3>UF ABE Robotics Team</h3>
-        <div class="mentor-period">2019 – 2023</div>
-        <p>Mentored undergraduates and graduate students in developing computer vision methods, designing, and assembling robots. The team won two Best Written Report Awards and one 3rd place in the Advanced Division of the ASABE Robotics Competition.</p>
-      </div>
-    </div>
+    -->
 
   </div>
 
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
   <script src="site.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      /* ── Lightbox ── */
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxClose = document.getElementById('lightboxClose');
+
+      document.querySelectorAll('.carousel-slide img').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', (e) => {
+          e.stopPropagation();
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          const event = img.closest('.gallery-event');
+          const caption = event ? event.querySelector('h3') : null;
+          lightboxCaption.textContent = caption ? caption.textContent : '';
+          lightbox.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+      lightboxClose.addEventListener('click', closeLB);
+      lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLB(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLB(); });
+      function closeLB() { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+
+      /* ── Carousel (mouse-drag + touch swipe) ── */
+      document.querySelectorAll('.gallery-carousel').forEach(carousel => {
+        const track = carousel.querySelector('.carousel-track');
+        const slides = carousel.querySelectorAll('.carousel-slide');
+        const prevBtn = carousel.querySelector('.carousel-prev');
+        const nextBtn = carousel.querySelector('.carousel-next');
+        const dotsWrap = carousel.querySelector('.carousel-dots');
+        let cur = 0, startX = 0, dragging = false;
+
+        slides.forEach((_, i) => {
+          const dot = document.createElement('button');
+          dot.classList.add('carousel-dot');
+          if (i === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => go(i));
+          dotsWrap.appendChild(dot);
+        });
+
+        function go(i) {
+          cur = Math.max(0, Math.min(i, slides.length - 1));
+          track.style.transform = `translateX(-${cur * 100}%)`;
+          dotsWrap.querySelectorAll('.carousel-dot').forEach((d, j) => d.classList.toggle('active', j === cur));
+        }
+        prevBtn.addEventListener('click', () => go(cur - 1));
+        nextBtn.addEventListener('click', () => go(cur + 1));
+
+        track.addEventListener('mousedown', (e) => { startX = e.clientX; dragging = true; });
+        track.addEventListener('mousemove', (e) => { if (dragging) e.preventDefault(); });
+        track.addEventListener('mouseup', (e) => { if (!dragging) return; dragging = false; const d = startX - e.clientX; if (Math.abs(d) > 50) go(cur + (d > 0 ? 1 : -1)); });
+        track.addEventListener('mouseleave', () => { dragging = false; });
+
+        track.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
+        track.addEventListener('touchend', (e) => { const d = startX - e.changedTouches[0].clientX; if (Math.abs(d) > 50) go(cur + (d > 0 ? 1 : -1)); });
+      });
+    });
+  </script>
 </body>
 </html>
