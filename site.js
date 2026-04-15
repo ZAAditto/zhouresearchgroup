@@ -4,7 +4,7 @@ function getNav(activePage) {
     ['People', 'people.html'],
     ['Research', 'research.html'],
     ['Extension', 'extension.html'],
-    ['Publications', 'publications.html'],
+    ['Teaching', 'teaching.html'],
     ['News', 'news.html'],
     ['Gallery', 'gallery.html'],
     ['Contact', 'contact.html'],
